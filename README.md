@@ -23,7 +23,7 @@ O detalhe mais importante da base: cada linha é um item de um pedido, e não a 
 ecommerce-data-analysis/
     dados/clientes.csv
     graficos/graficos.png
-    analise_clientes.ipynb
+    analysis.ipynb
     README.md
 ```
 
@@ -102,17 +102,6 @@ A loja atendeu 3.533 clientes distintos. Contei cada cliente uma vez só, usando
 | Vitória da Conquista | 109 |
 | Caucaia | 105 |
 | Pelotas | 102 |
-
-        
-    
-               
-      
-                
-                
-                
-    
-                 
-                 
 
 As cidades com mais clientes são Feira de Santana (135), Aparecida de Goiânia (129), Fortaleza (123), Juazeiro do Norte (119) e Anápolis (117).
 
