@@ -57,7 +57,7 @@ Problemas que encontrei logo de cara:
 
 ## Questão 2: Tratamento de inconsistências
 
-Fiz a limpeza em uma cópia da base (`df_limpo`), na ordem abaixo.
+Fiz a limpeza em uma cópia da base (df_limpo), na ordem abaixo.
 
 | Problema | O que eu fiz                                                                                     |
 |---|--------------------------------------------------------------------------------------------------|
@@ -74,7 +74,7 @@ Os nulos de avaliação que já existiam (pedidos cancelados e em transporte) co
 
 ## Questão 3: Demografia de clientes
 
-A loja atendeu **3.533 clientes distintos**. Contei cada cliente uma vez só, usando uma linha por cliente.
+A loja atendeu 3.533 clientes distintos. Contei cada cliente uma vez só, usando uma linha por cliente.
 
 | Estado | Clientes |
 |---|---|
@@ -89,6 +89,30 @@ A loja atendeu **3.533 clientes distintos**. Contei cada cliente uma vez só, us
 | SP | 338 |
 | SC | 338 |
 | Não informado | 2 |
+
+| Cidades | Clientes |
+|---|---|
+| Feira de Santana | 135 |
+| Aparecida de Goiânia | 129 |
+| Fortaleza | 123 |
+| Juazeiro do Norte  | 119 |
+| Anápolis | 117 |
+| Salvador | 116 |
+| Goiânia  | 116 |
+| Vitória da Conquista | 109 |
+| Caucaia | 105 |
+| Pelotas | 102 |
+
+        
+    
+               
+      
+                
+                
+                
+    
+                 
+                 
 
 As cidades com mais clientes são Feira de Santana (135), Aparecida de Goiânia (129), Fortaleza (123), Juazeiro do Norte (119) e Anápolis (117).
 
