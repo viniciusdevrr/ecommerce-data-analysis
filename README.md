@@ -296,9 +296,31 @@ Os gráficos ficaram junto de cada análise, com uma legenda curta embaixo de ca
 | Taxa de devolução por categoria | barras | 9 |
 | Faturamento mensal por ano | linhas | 7 |
 
+## Questão 11: Estudo Aplicado
+
+O Problema: 
+
+Os clientes que compram várias vezes valem mais para a loja do que os que compram pouco? Se sim, onde focar a fidelização?
+
+Metodologia:
+
+Usei só pedidos concluídos. Primeiro deixei uma linha por pedido (drop_duplicates) e contei quantos pedidos cada cliente fez (value_counts). Depois somei o gasto de cada cliente (groupby) e juntei as duas informações em uma tabela. Chamei de recorrentes os clientes com 4 pedidos ou mais e comparei com os demais em participação nos clientes, participação no faturamento, gasto médio e ticket médio.
+
+Evidências:
+
+Dos 2.757 clientes com pelo menos um pedido concluído, 980 (35,5%) são recorrentes e geram 83,6% do faturamento. Cada um gasta em média RS 19.471, contra RS 2.109 dos demais, cerca de 9 vezes mais. O ticket médio, porém, é praticamente igual (RS 1.566 contra RS 1.560). Ou seja, o cliente recorrente não gasta mais por pedido: ele vale mais porque volta a comprar.
+
+![Clientes Viciados em Comprar](graficos/grafico_clientes_viciados.png)
+
+*Os clientes recorrentes são pouco mais de um terço da base, mas concentram mais de 80% do faturamento.*
+
+Recomendação:
+
+A loja deve investir em fazer o cliente comprar de novo. Como o valor do cliente vem da frequência e não do tamanho de cada compra, vale criar ações para quem acabou de fazer o primeiro ou o segundo pedido, como um cupom ou frete grátis na próxima compra, e manter um programa de benefícios para os clientes recorrentes, que sustentam a maior parte da receita. Os dados mostram o padrão, mas não o motivo de o cliente não voltar, então o ideal é testar a ação com um grupo pequeno antes de aplicar em toda a base.
+
 ## Como executar
 
-1. Instale as bibliotecas: `pip install pandas numpy matplotlib`
-2. Deixe o arquivo `clientes.csv` na mesma pasta do notebook.
+1. Instale as bibliotecas: [ pip install pandas numpy matplotlib ]
+2. Deixe o arquivo [ clientes.csv ] na mesma pasta do notebook.
 3. Abra o notebook no Jupyter e execute as células em ordem.
-4. Para os gráficos aparecerem no README, salve cada imagem na pasta `imagens/` com os nomes usados acima.
+4. Para os gráficos aparecerem no README, salve cada imagem na pasta [ graficos/ ] com os nomes usados acima.
